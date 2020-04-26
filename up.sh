@@ -9,6 +9,7 @@ EOF
 # tmux
 cat <<EOF > ~/.tmux.conf
 bind e setw synchronize-panes
+bind k kill-session
 EOF
 
 # kubectl
