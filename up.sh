@@ -1,8 +1,10 @@
 #!/bin/bash
 
 # vim
-git clone --depth=1 https://github.com/amix.git/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_awesome_vimrc.sh
+cat <<EOF > ~/.vimrc
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
+set ts=2 sts=2 sw=2 expandtab
+EOF
 
 # kubectl
 apt-get install bash-completion -y
@@ -12,6 +14,10 @@ kubectl completion bash
 cat <<EOF >> ~/.bashrc
 
 # CKA
+
+# vars
+export EDITOR=vim
+export ETCDCTL_API=3
 
 # completion
 source <(kubectl completion bash)
