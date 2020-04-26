@@ -55,4 +55,4 @@ alias sr='systemctl restart'
 EOF
 
 # reload
-exec $SHELL && source ~/.bashrc
+source ~/.bashrc
