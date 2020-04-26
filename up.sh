@@ -6,6 +6,11 @@ au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
 set ts=2 sts=2 sw=2 expandtab
 EOF
 
+# tmux
+cat <<EOF > ~/.tmux.conf
+bind e setw synchronize-panes
+EOF
+
 # kubectl
 apt-get install bash-completion -y
 kubectl completion bash
