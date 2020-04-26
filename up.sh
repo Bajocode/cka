@@ -46,6 +46,8 @@ alias kgn='kubectl get nodes'
 alias kgd='kubectl get deployments'
 alias kge='kubectl get events'
 alias kgs='kubectl get services'
+alias kn='kubectl config set-context --current --namespace'
+alias kx='kubectl config use-context'
 
 # alias ubuntu
 alias jxe='journalctl -xe'
