@@ -48,6 +48,9 @@ alias kge='kubectl get events'
 alias kgs='kubectl get services'
 alias kn='kubectl config set-context --current --namespace'
 alias kx='kubectl config use-context'
+alias kapi='kubectl api-resources'
+alias ker='kubectl explain --recursive'
+alias ke='kubectl explain'
 
 # alias ubuntu
 alias jxe='journalctl -xe'
