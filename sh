@@ -6,15 +6,9 @@ cat <<EOF > ~/.vimrc
 au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
 set ts=2 sts=2 sw=2 expandtab
 " maps
-map [D <c-w>h
-map [C <c-w>l
-map [A <c-w>k
-map [B <c-w>j
 map <space> :%s/
 map <leader>q :q!<cr>
 map <leader>w :w<cr>
-map <leader>y "*y
-map <leader>p "*p
 EOF
 
 # tmux
