@@ -60,4 +60,4 @@ alias sr='systemctl restart'
 EOF
 
 # reload
-source $HOME/.bashrc
+source /root/.bashrc
