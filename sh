@@ -36,6 +36,10 @@ kubectl completion bash >/etc/bash_completion.d/kubectl
 alias k=kubectl
 complete -F __start_kubectl k
 
+# alias os
+alias vimrc='vim ~/.vimrc'
+alias bashrc='vim ~/.bashrc'
+
 # alias k8s
 alias kg='kubectl get'
 alias ke='kubectl explain'
